@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% include "includes/navbar.html" %}
+
+    <br><br><br>
+    <div class = "container">
+        {% include "includes/messages.html" %}
+
+            {% block body_1 %}
+                 {% include "includes/enterancegreen.html" %}
+            {% endblock %}
+            {% block body_2 %}
+                 {% include "includes/portfolio.html" %}
+            {% endblock %}
+                 
+            {% block body_3 %}
+                 {% include "includes/about.html" %}
+            {% endblock %}
+
+            {% block body_4 %}
+                 {% include "includes/contact.html" %}
+            {% endblock %}
